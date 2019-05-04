@@ -29,7 +29,10 @@
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {
+    "bootstrap-datetimepicker-npm": "^4.17.37-npm",
+    "datetimepicker": "^0.1.38",
     "jquery": "^3.3.1",
+    "js-datepicker": "^4.0.10",
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1"
   }

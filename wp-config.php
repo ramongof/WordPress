@@ -19,17 +19,47 @@
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define('DB_NAME', 'wordpress');
 
-/** MySQL database username */
-define('DB_USER', 'admin');
+if(file_exists(dirname(__FILE__) . '/local.php'))
+{
+	// Local database settings
+	define('DB_NAME', 'wordpress');
 
-/** MySQL database password */
-define('DB_PASSWORD', '123456');
 
-/** MySQL hostname */
-define('DB_HOST', 'localhost/phpmyadmin');
+	define('DB_USER', 'admin');
+
+
+	define('DB_PASSWORD', '123456');
+
+
+	define('DB_HOST', 'localhost/WordPress');
+}
+else
+{
+	// Live database settings
+	define('DB_NAME', 'wordpress');
+
+
+	define('DB_USER', 'admin');
+
+
+	define('DB_PASSWORD', '$as3TG^ja**()llkb456');
+
+
+	define('DB_HOST', 'localhost/phpmyadmin');
+}
+
+// /** The name of the database for WordPress */
+// define('DB_NAME', 'wordpress');
+
+// /** MySQL database username */
+// define('DB_USER', 'admin');
+
+// /** MySQL database password */
+// define('DB_PASSWORD', '123456');
+
+// /** MySQL hostname */
+// define('DB_HOST', 'localhost/phpmyadmin');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
